@@ -180,9 +180,10 @@ svg {
 
 .pusher .article {
     position: absolute;
-    top: 0;
+    top: 4em;
     right: 0;
-    left: 300px;
+    /* left: 300px; */
+    left: 0;
     bottom: 0;
     overflow-y: auto;
     -webkit-box-flex: 1;
@@ -222,8 +223,16 @@ svg {
 }
 
 .fixed.menu > .container > .item {
-    margin: 10px;
+    /* TODO(dz): */
+    /* margin: 10px; */
 }
+.fixed.menu > .container > .item:first-child {
+    /* TODO(dz): */
+    margin-left: 1em;
+}
+/* .fixed.menu > .container > .item.logo > * {
+    margin-right: 10px;
+} */
 
 /* breadcrumbs in inverted view */
 .inverted .ui.breadcrumb a, .inverted .ui.breadcrumb .icon {
@@ -296,58 +305,52 @@ svg {
     display: none;
 }
 
+/* TODO(dz): */
 @media only screen and (max-width: 1144px) {
-    .pusher > .toc {
-        width: 200px;
-        position: absolute;
-        top: 0;
-        left: -300px;
-        bottom: 0;
-        z-index: 1;
-        overflow-y: auto;
-    }
-    .navigation.navigation-prev {
-        left: 200px;
-    }
-    .pusher > .toc {
-        display: none;
-    }
     .hidemobile {
         display: none !important;
     }
     .showmobile {
         display: block;
     }
-    .pusher .article {
-        left: 0;
-    }
-    .navigation.navigation-next {
-        margin-right: 0;
-    }
-    .ui.container.mainbody {
-        margin-top: 5rem;
-        margin-left: 0!important;
-        margin-right: 0!important;
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-    .navigation {
-        position: relative; /* IE doesn't support static */
-        position: static;
-        top: auto;
-        max-width: 48%;
-        width: 50%;
-        display: inline-block !important;
-    }
-    .navigation.navigation-prev {
-        left: 0px;
-    }
-    .ui.vertical.segment.footer {
-        margin-top: 4rem;
-    }
 }
 
-@media only screen and (min-width: 1145px) {
+.navigation.navigation-prev {
+    left: 200px;
+}
+/* .pusher > .toc {
+    display: none;
+} */
+.navigation.navigation-next {
+    margin-right: 0;
+}
+.ui.container.mainbody {
+    margin-left: 0!important;
+    margin-right: 0!important;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.ui.sidebar {
+    top: 4rem;
+}
+.navigation {
+    position: relative;
+    position: static;
+    top: auto;
+    max-width: 48%;
+    width: 50%;
+    display: inline-block !important;
+}
+.navigation.navigation-prev {
+    left: 0px;
+}
+.ui.vertical.segment.footer {
+    margin-top: 4rem;
+}
+/* } */
+
+/* TODO(dz): */
+/* @media only screen and (min-width: 1145px) {
     .fixed.main.menu {
         display: none;
     }
@@ -358,7 +361,7 @@ svg {
         padding-left: 2em;
         padding-right: 2em;
     }
-}
+} */
 
 /**
 print only stuff
